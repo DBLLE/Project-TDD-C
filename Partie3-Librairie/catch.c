@@ -8,8 +8,8 @@ int catch(char * dst, size_t dstsize, const char * src) {
 	
 	char * final = (char *) malloc(1 + strlen(src)+ dstsize );
 	strcpy(final, src);
- strcat(final dst);
- printf("%s", final);
+	strcat(final dst);
+	printf("%s", final);
 	
 	return dst;
 }

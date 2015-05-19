@@ -4,11 +4,17 @@
  * Renvoie la position du premier caractère de la chaîne concaténée
  */
  
-int catch(char * dst, size_t dstsize, const char * src){
-return -1; /* bouchon */
+int catch(char * dst, size_t dstsize, const char * src) {
+	
+	char * final = (char *) malloc(1 + strlen(src)+ dstsize );
+	strcpy(final, src);
+ strcat(final dst);
+ printf("%s", final);
+	
+	return dst;
 }
 
-void testcatch(void){
+void testcatch(void) {
     CU_ASSERT_EQUAL(catch(tab,25,"salut"),6);
 }
 
